@@ -1,0 +1,17 @@
+## 
+##  This is an updated UCF file from the original version by Digilink. 
+##  The CS signal has been removed and all the other signals are mapped to 
+##  proper pin on the Zynq FPGA. 
+##  For the reset, the middle-push button is used.
+##  Modified by Farhad Abdolian (fabdolian@seemaconsulting.com) Nov. 5, 2012
+##
+
+Net "zedoled_controller_0_ZEDOLED_SDIN_pin" LOC = AA12 | IOSTANDARD = LVCMOS33; 
+Net "zedoled_controller_0_ZEDOLED_SCLK_pin" LOC = AB12 | IOSTANDARD = LVCMOS33;
+Net "zedoled_controller_0_ZEDOLED_DC_pin"   LOC = U10  | IOSTANDARD = LVCMOS33; 
+Net "zedoled_controller_0_ZEDOLED_RES_pin"  LOC = U9   | IOSTANDARD = LVCMOS33; 
+Net "zedoled_controller_0_ZEDOLED_VBAT_pin" LOC = U11  | IOSTANDARD = LVCMOS33; 
+Net "zedoled_controller_0_ZEDOLED_VDD_pin"  LOC = U12  | IOSTANDARD = LVCMOS33;
+
+#We use the center push button as the reset for this project
+Net "zedoled_controller_0_ZEDOLED_RST_pin"  LOC = P16  | IOSTANDARD = LVCMOS33;
